@@ -133,11 +133,7 @@ namespace tx_checkboxes
 
                         textPart.Selection.FontName = "Arial Unicode MS";
 
-                        // set the text (state)
-                        if (checkboxField.Checked == true)
-                            checkboxField.Text = CHECKED;
-                        else
-                            checkboxField.Text = UNCHECKED;
+                        checkboxField.Text = checkboxField.Checked == true ? CHECKED : UNCHECKED;
                     }
                 }
 
